@@ -1,12 +1,21 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Sentyle&fontSize=80&animation=fadeIn&fontAlignY=35&descSize=15&desc='Sent'iment%20and%20S'tyle'&descAlignY=50&descAlign=43&fontColor=FFFFFF)
 
 
-# Sentyle
-패션 쇼핑몰 리뷰 데이터 감성 분석 및 긍부정 예측
-<hr>
+# 👟👜 Sentyle 👚👖
+KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 긍부정 예측
 
-# 1. 개요
-이번 프로젝트에서는 한국어 자연어 처리 모델인 KOELECTRA를 활용하여 네이버 영화 리뷰의 긍부정 예측을 하고자 한다.
+## 1. 개요
+
+   * ### 문제정의
+ 
+     현재 우리는 인터넷을 통해 언제 어디서나 쉽게 상품을 구매할 수 있다. 이러한 형태의 상거래를 전자상거래(e-commerce)라고 한다.
+     
+     <a href="https://www.samsungpop.com/mobile/invest/poptv.do?cmd=fileDown&FileNm=uma_200626.html"><img width="600" alt="e-commerce" src="https://user-images.githubusercontent.com/130523834/235652059-dfc61816-33cc-47cd-8ff4-28ed1d4ec2d1.jpg"> <br>
+     (출처: 삼성증권 포트폴리오전략팀<sup>[01]</sup>) 
+  
+       <hr>
+
+
 
 ## 1.1 문제 정의
 영화 리뷰는 영화 감상에 있어 가장 보편적으로 활용되는 정보의 창구이다.
