@@ -13,7 +13,6 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
 
      <img width="450" alt="chart1" src="https://github.com/wnaely/Sentyle/assets/130523834/7cf8ea06-d124-4aa0-8a4a-5a143d41ad5c">
      <img width="500" alt="chart2" src="https://github.com/wnaely/Sentyle/assets/130523834/cd7e82c0-1cc5-484c-b180-bf699d30f708"> <br>
-     
      (출처: DAILY POP 경제 기사 <sup><a href="https://www.dailypop.kr/news/articleView.html?idxno=65004">[01]</a></sup>) /
      (출처: WISEAPP 인사이트 <sup><a href="https://www.wiseapp.co.kr/insight/detail/408">[02]</a></sup>)
 
