@@ -82,6 +82,8 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
     "Word": "10", <br>
     "RDate": "20210804", <br>
     "GeneralPolarity": "1" <br>
+
+     이 중에서 "GeneralPolarity" 데이터를 추가하여 새로운 데이터셋을 ...
      
 
    * ### 탐색적 데이터 분석
