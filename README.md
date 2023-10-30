@@ -16,8 +16,9 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
      (출처: <a href="https://www.dailypop.kr/news/articleView.html?idxno=65004">DAILY POP 경제 기사</a>) /
      (출처: <a href="https://www.wiseapp.co.kr/insight/detail/408">WISEAPP 인사이트</a>) </div></h5>
      
-     작년 겨울인 22년도 11월에 한 모바일 홈쇼핑 플랫폼을 이용하는 사용자들이 가장 많이 시청한 상품군은 '패션/잡화'였다. 해당 트렌드 리포트에 따르면, '패션/잡화' 상품군은 전체 시청수의 66.6%를 차지하는 것으로 조사되었다<sup><a href="https://www.dailypop.kr/news/articleView.html?idxno=65004">[01]</a></sup>. 또한 통계청의 온라인쇼핑 동향조사 결과, 2017년 31조 수준이었던 온라인 쇼핑몰의 연간 거래액은 2022년 77조로 5년 사이 147% 성장했다<sup><a href="https://www.wiseapp.co.kr/insight/detail/408">[02]</a></sup>. <br>
-     이러한 결과를 통해 패션에 대한 사람들의 관심과 수요가 높다는 것을 알 수 있고, 모바일 홈쇼핑 플랫폼을 통한 패션 제품의 수요가 많아지고 있다는 것은 온라인 패션 시장이 계속 성장하고 있음을 나타낸다.
+     작년 겨울인 22년도 11월에 한 모바일 홈쇼핑 플랫폼을 이용하는 사용자들이 가장 많이 시청한 상품군은 '패션/잡화'였다. 해당 트렌드 리포트에 따르면, '패션/잡화' 상품군은 전체 시청수의 66.6%를 차지하는 것으로 조사되었다<sup><a href="https://www.dailypop.kr/news/articleView.html?idxno=65004">[01]</a></sup>. 또한 통계청의 온라인쇼핑 동향조사 결과, 2017년 31조 수준이었던 온라인 쇼핑몰의 연간 거래액은 2022년 77조로 5년 사이 147% 성장했다<sup><a href="https://www.wiseapp.co.kr/insight/detail/408">[02]</a></sup>.
+     
+     위와 같은 결과를 통해 패션에 대한 사람들의 관심과 수요가 높다는 것을 알 수 있고, 모바일 홈쇼핑 플랫폼을 통한 패션 제품의 수요가 많아지고 있다는 것은 온라인 패션 시장이 계속 성장하고 있음을 나타낸다.
      <hr>
 
      <h5><div align="center"><img width="800" alt="shoppingapp" src="https://github.com/wnaely/Sentyle/assets/130523834/31772289-c5b7-4545-80de-75b21f4feda6"> <br>
@@ -36,23 +37,22 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
 
      이러한 점들을 보았을 때 쇼핑몰에서의 리뷰는 종합적인 면에서 매우 중요한 것을 알 수 있다.
      따라서 이번 프로젝트에서는 패션 쇼핑몰 리뷰 데이터를 수집하고 분석하여 플랫폼의 장단점과 개선점을 파악하는 것을 목표로 하며, 이를 위해 AI Hub에서 제공하는 '쇼핑몰 리뷰 데이터'를 이용하여 리뷰의 긍정 혹은 부정을 예측하는 인공지능 모델을 개발하려고 한다.
-
-<hr>
-
-
-## 2. 데이터
+     <hr>
 
    * ### 데이터 및 모델 개요
      데이터는 AI Hub에서 제공하는 [쇼핑몰 리뷰 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71603)를 활용하여, 총 4만5천 건의 데이터에 대해서 사전 학습 언어 모델의 재학습(fine-tuning)을 수행한다.
 
      | 입력 | 모델 | 출력 |
-     |----------|---|---|
-     | 쇼핑몰 리뷰 문장 | KOELECTRA small <sup>[[01]](https://huggingface.co/monologg/koelectra-small-discriminator)</sup> | 부정(0), 긍정(1) |
+     |------|------|------|
+     | 쇼핑몰 리뷰 문장 | KOELECTRA small <sup>[[04]](https://huggingface.co/monologg/koelectra-small-discriminator)</sup> | 부정(0), 긍정(1) |
      
 
      쇼핑몰 리뷰 문장은 전처리를 통해서 가공한다.
      대표적인 전처리로는 결측치와 중복값을 제거하고, 띄어쓰기로 구분이 되지 않는 리뷰 역시 제거한다.
-     
+<hr>
+
+
+## 2. 데이터
       
    * ### 원본 데이터 소개
 
@@ -66,6 +66,23 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
      |...|...|...|...|...|...|
      |215103|패션|잡화|OO 아** 핸드백 3종|토트백 사이즈크고 좋아요. 끈 가죽재질 아니라 아쉽네요. 스퀘어백 사이즈 좋은작아요...|쇼핑몰|
      |215108|패션|잡화|OO 아** 핸드백 3종|검정색구매후 브라운색상 재주문했어요. 지퍼부분이 좀 불편하네요...|쇼핑몰|
+
+     #### [ 라벨링 데이터 일부 ]
+
+     |Index|RawText|MainCategory|productName|ReviewScore|Syllable|Word|RDate|GeneralPolarity|
+      |-|-|-|-|-|-|-|-|-|
+      |구분ID|리뷰데이터 소스 정보||text of the review(heading)|time of the review(raw)|ID of the reviewer|name of the reviewer|summary of the review|unix timestamp| 
+
+      "Index": "15", <br>
+    "RawText": "편하고  디자인이 예뻐요  가격도  좋아요   시원해요  빨리 마르고  이것만  입게되요", <br>
+    "MainCategory": "여성의류", <br>
+    "ProductName": "OO 플** 베스트 풀코디 3종", <br>
+    "ReviewScore": "100", <br>
+    "Syllable": "49", <br>
+    "Word": "10", <br>
+    "RDate": "20210804", <br>
+    "GeneralPolarity": "1" <br>
+     
 
    * ### 탐색적 데이터 분석
 
@@ -98,7 +115,7 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
    [02] https://www.wiseapp.co.kr/insight/detail/408
    [03] https://www.m-i.kr/news/articleView.html?idxno=830313
    
-   [01] https://huggingface.co/monologg/koelectra-small-discriminator <br>
+   [04] https://huggingface.co/monologg/koelectra-small-discriminator <br>
 
 
 
