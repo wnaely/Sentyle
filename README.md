@@ -71,7 +71,7 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
 
      |Index|RawText|MainCategory|productName|ReviewScore|Syllable|Word|RDate|GeneralPolarity|
       |-|-|-|-|-|-|-|-|-|
-      |구분ID|리뷰데이터 소스 정보||text of the review(heading)|time of the review(raw)|ID of the reviewer|name of the reviewer|summary of the review|unix timestamp| 
+      |구분ID|리뷰데이터 소스 정보|해당상품이 속해있는 카테고리|리뷰 대상의 상품명|상품평 스코어|상품평 음절수|상품평 어절수|데이터 생성일자|상품평 전체 감정 극성| 
 
       "Index": "15", <br>
     "RawText": "편하고  디자인이 예뻐요  가격도  좋아요   시원해요  빨리 마르고  이것만  입게되요", <br>
