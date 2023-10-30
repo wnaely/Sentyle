@@ -69,6 +69,8 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
 
      <div align="center"><img width="700" alt="chart1" src="https://github.com/wnaely/Sentyle/assets/130523834/43d8bce5-ebf0-429c-a044-c0e2c39d2bb5"></div>
 
+     패션 카테고리 분포를 시각화 해봤을 때 여성의류에 대한 리뷰가 가장 많고, 잡화 리뷰가 가장 적은것을 볼 수 있다.
+
 
      #### [ 라벨링 데이터 일부 ]
 
@@ -86,7 +88,14 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
     "RDate": "20210804", <br>
     "GeneralPolarity": "1" <br>
 
-     이 중에서 "GeneralPolarity" 데이터를 추가하여 새로운 데이터셋을 ...
+     이 라벨링된 데이터에서 상품평 리뷰 긍부정 라벨인 "GeneralPolarity" 데이터를 기존 원본 데이터에 추가하였다. 라벨링은 1이 긍정, 0이 중립, -1은 부정이다.
+
+     <div align="center"><img width="700" alt="chart1" src="https://github.com/wnaely/Sentyle/assets/130523834/f353e4ff-9aa8-4665-90e4-93abb935c021"></div>
+
+     라벨링 된 데이터를 나타내 보았을 때 긍정적인 리뷰가 가장 많은 것을 확인할 수 있다.
+
+     
+
      
 
    * ### 탐색적 데이터 분석
