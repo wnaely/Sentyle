@@ -126,7 +126,7 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
        
    ## References
    [01] https://www.dailypop.kr/news/articleView.html?idxno=65004 <br>
-   [02] https://www.wiseapp.co.kr/insight/detail/408
+   [02] https://www.wiseapp.co.kr/insight/detail/408 <br>
    [03] https://www.m-i.kr/news/articleView.html?idxno=830313
    
    [04] https://huggingface.co/monologg/koelectra-small-discriminator <br>
