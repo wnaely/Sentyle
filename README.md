@@ -86,11 +86,34 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
     "Word": "10", <br>
     "RDate": "20210804", <br>
     "GeneralPolarity": "1" <br>
-     <hr>
 
      라벨링된 데이터에서 상품평 리뷰 긍부정 라벨인 "GeneralPolarity" 데이터를 기존 원본 데이터에 추가하였다. 1이 긍정, 0이 중립, -1은 부정으로 라벨링 되어 있으며, 라벨링이 되어있지 않은 애매한 리뷰는 no general polarity로 분류하였다.
 
-     결측치와 중복값을 제거하고 글자수가 20 미만인 리뷰는 삭제하여 데이터 전처리를 진행한다. 44877개
+     <p align="center" width="100%">
+     <img width="49%" src="https://github.com/wnaely/Sentyle/assets/130523834/9a663e1f-26d3-4bb5-ba7c-5dcec1af9144">
+     <img width="49%" src="https://github.com/wnaely/Sentyle/assets/130523834/d937e4a6-4f03-442d-a2ad-3c4c00af737d"></p>
+
+     데이터를 시각화 해 보았을 때 패션 카테고리 별 리뷰의 분포는 여성의류 관련 리뷰가 19,478개로 가장 많고 잡화 관련 리뷰가 3,930개로 가장 적은 것을 알 수 있다. 남성의류 관련 리뷰는 10,002개로 여성의류 보다 9,000개 이상 적었다.
+
+     데이터의 긍부정 라벨링 분포에서는 긍정적인 리뷰가 26,457개로 가장 많았으며, 부정적인 리뷰와 중립인 리뷰는 각각 9,267개, 8,687개로 긍정적인 리뷰에 비해 확연히 적은 것을 확인할 수 있다. 라벨링 되지 않은 데이터인 'no general polarity'는 589개로 나타났다.
+     <hr>
+
+
+
+     분석 결과와 모델 학습의 효과를 향상시키기 위해 전처리 작업을 수행하였다. 
+     
+     애매하거나 중립인 리뷰는 감성 분석의 정확도를 낮출 수 있기 때문에 제외하고, 결측치와 중복값도 제거하였다.
+     또한 제한된 텍스트로 인해 의미 있는 정보가 부족한 15자 미만의 짧은 리뷰 데이터도 삭제하여 최종 데이터셋을 준비했다. 
+      
+
+     <p align="center" width="100%">
+     <img width="49%" src="https://github.com/wnaely/Sentyle/assets/130523834/499d4972-0944-4beb-af18-16985e19e9cb">
+     <img width="49%" src="https://github.com/wnaely/Sentyle/assets/130523834/d937e4a6-4f03-442d-a2ad-3c4c00af737d"></p>
+
+     ![image]()
+     ![image]()
+
+
 
 
     
