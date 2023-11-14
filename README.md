@@ -121,10 +121,9 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
       
 
      <p align="center" width="100%">
-     <img width="60%" src="https://github.com/wnaely/Sentyle/assets/130523834/499d4972-0944-4beb-af18-16985e19e9cb">
-     </p>
+     <img width="53%" src="https://github.com/wnaely/Sentyle/assets/130523834/499d4972-0944-4beb-af18-16985e19e9cb">
+     <img width="46%" src="https://github.com/wnaely/Sentyle/assets/130523834/110013ac-000d-4df8-bec0-75c48025a1b8"></p>
 
-    
 
 
 
