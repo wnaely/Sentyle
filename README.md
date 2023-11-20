@@ -118,7 +118,8 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
 
      <p align="center" width="100%">
      <img width="53%" src="https://github.com/wnaely/Sentyle/assets/130523834/499d4972-0944-4beb-af18-16985e19e9cb">
-     <img width="46%" src="https://github.com/wnaely/Sentyle/assets/130523834/110013ac-000d-4df8-bec0-75c48025a1b8"></p>
+     <img width="46%" src="https://github.com/wnaely/Sentyle/assets/130523834/0e4ccc80-8d48-4975-9ffb-07a6b9d8178d"></p>
+
 
      전처리 후 데이터를 살펴 보면 리뷰 데이터의 문장 길이는 100자 이하에 가장 많이 몰려있고, 긍부정 비율은 여전히 긍정적인 리뷰가 부정적인 리뷰에 비해 3배 가까이 높은 비율을 차지하고 있다.
      <hr>
