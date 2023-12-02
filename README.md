@@ -44,13 +44,22 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
 
    * ### 데이터 및 모델 개요
      데이터는 AI Hub에서 제공하는 [쇼핑몰 리뷰 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71603)를 활용하여, 총 4만5천 건의 데이터에 대해서 사전 학습 언어 모델의 재학습(fine-tuning)을 수행한다.
+     
+     데이터는 2022년 쇼핑몰과 SNS 한글 리뷰 데이터로 구성되어 있고 패션, 화장품, 가전, IT기기, 생활 분야로 나눠져 있다.
+     리뷰와 라벨링 데이터는 텍스트와 JSON 형태로 저장되어 있으며, 이중에서 패션 분야의 쇼핑몰 리뷰 데이터를 사용하여 프로젝트를 진행했다.
 
      | 입력 | 모델 | 출력 |
      |:------:|:------:|:------:|
-     | 쇼핑몰 리뷰 문장 | KOELECTRA small <sup>[[04]](https://huggingface.co/monologg/koelectra-small-discriminator)</sup> | 부정(0), 긍정(1) |
+     | 쇼핑몰 리뷰 문장 | KoELECTRA-Small-v3 <sup>[[04]](https://huggingface.co/monologg/koelectra-small-discriminator)</sup> | 부정(0), 긍정(1) |
+
+     이번 프로젝트에서는 Hugging Face에 등록된 KoELECTRA-Small-v3 Discriminator의 토큰나이저 및 PreTrained 모델을 사용했다.
      
-     데이터는 2022년 쇼핑몰과 SNS 한글 리뷰 데이터로 구성되어 있고 패션, 화장품, 가전, IT기기, 생활 분야로 나눠져 있다.
-     리뷰와 라벨링 데이터는 텍스트와 JSON 형태로 저장되어 있으며, 이중에서 패션 분야의 쇼핑몰 리뷰 데이터를 사용하여 프로젝트를 진행하려 한다.
+     KoELECTRA에서 "Ko"는 한국어를 나타내며, ELECTRA 모델을 한국어 자연어 처리 작업에 맞게 사전 학습한 모델을 가리킨다. 
+     ELECTRA는 Google에서 발표한 모델로, BERT와 같이 트랜스포머(Transformers) 아키텍처를 기반으로 한다. <br>
+     KoELECTRA는 대규모 한국어 텍스트 데이터 말뭉치를 훈련하여 텍스트 분류, 명명 개체 인식, 감성 분석 등 다양한 한국어 자연어 처리 작업에서 최고 수준의 성능을 달성했다<sup>[[05]](https://aws.amazon.com/ko/blogs/tech/kurly-sagemaker-product-review-classification-model/)</sup>.
+     KoELECTRA는 오픈소스 프로젝트로 연구 커뮤니티에 공개되어 한국어 자연어 처리 작업의 정확도와 효율성을 높이기 위해 다양한 응용 분야에서 활용되고 있다.
+
+
      
 <hr>
 
@@ -104,7 +113,8 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
      분석 결과와 모델 학습의 효과를 향상시키기 위해 전처리 작업을 수행하였다.
      
      애매하거나 중립인 리뷰는 감성 분석의 정확도를 낮출 수 있기 때문에 제외하고, 결측치와 중복값도 제거하였다.
-     또한 제한된 텍스트로 인해 의미 있는 정보가 부족한 15자 미만의 짧은 리뷰 데이터도 삭제하였고, 리뷰 중에 줄바꿈이 있는 경우 줄바꿈(\n)을 공백으로 대체하여 최종 데이터셋을 준비했다.
+     또한 제한된 텍스트로 인해 의미 있는 정보가 부족한 15자 미만의 짧은 리뷰 데이터도 삭제하였다.<br>
+     리뷰 중에 줄바꿈이 있는 경우 줄바꿈(\n)을 공백으로 대체하였고, label이 -1인 부정 리뷰를 label 0으로 변경하여 최종 데이터셋을 준비했다.
 
      45,000건이었던 원본 데이터에서 전처리를 마친 후 <b>최종 데이터셋은 35,651건</b>이 되었다.
 
@@ -121,6 +131,10 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
 
      # '줄바꿈(\n)'을 공백으로 대체
      data['review'] = data['review'].str.replace("[\n]"," ")
+
+     # label이 -1인 부정 리뷰를 0으로 label 변경
+     for j in range(len(data['label'])):
+     if data['label'][j] == -1: data['label'][j]=0
      ```
 
      |전처리 내용|예시|전처리 후 데이터의 개수|결과|
@@ -183,6 +197,8 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
    [03] https://www.m-i.kr/news/articleView.html?idxno=830313
    
    [04] https://huggingface.co/monologg/koelectra-small-discriminator <br>
+   [05] https://aws.amazon.com/ko/blogs/tech/kurly-sagemaker-product-review-classification-model/ <br>
+   
 
 
 
