@@ -108,6 +108,18 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
 
      45,000건이었던 원본 데이터에서 전처리를 마친 후 <b>최종 데이터셋은 35,651건</b>이 되었다.
 
+     ```python
+     # 중복값 제거
+     data.drop_duplicates(subset=['review'], inplace=True)
+     
+     # 결측치 제거
+     data = data.dropna(how='any')
+
+     # 리뷰가 15자 이상 500자 이하인 행들로 데이터셋 구성
+     data['length'] = data['review'].str.len()
+     data = data[(data['length'] >= 15) & (data['length'] <= 500)]
+     ```
+
      |전처리 내용|예시|전처리 후 데이터의 개수|결과|
      |:-:|:-:|:-:|:-:|
      |중복, 결측치 제거|중복값: 4개, 결측치: 4개|44,992|중복, 결측치 삭제|
