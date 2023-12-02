@@ -3,6 +3,7 @@
 
 # 👟👜 Sentyle 👚👖
 KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 긍부정 예측
+<span style='background-color:#dcffe4'>입력</span>
 
 ## 1. 개요
 
@@ -45,7 +46,7 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
    * ### 데이터 및 모델 개요
      데이터는 AI Hub에서 제공하는 [쇼핑몰 리뷰 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71603)를 활용하여, 총 4만5천 건의 데이터에 대해서 사전 학습 언어 모델의 재학습(fine-tuning)을 수행한다.
 
-     | 입력 | 모델 | 출력 |
+     | <span style='background-color:#dcffe4'>입력</span> | 모델 | 출력 |
      |:------:|:------:|:------:|
      | 쇼핑몰 리뷰 문장 | KOELECTRA small <sup>[[04]](https://huggingface.co/monologg/koelectra-small-discriminator)</sup> | 부정(0), 긍정(1) |
      
