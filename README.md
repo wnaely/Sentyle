@@ -186,8 +186,15 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
 
 ## 3. 재학습 결과
    * ### 개발 환경
-     - pycharm, python, torch, pandas, ...
-     -
+     <a href="https://blog.jetbrains.com/pycharm/2023/03/2022-3-3/" target="_blank"><img src="https://img.shields.io/badge/PyCharm-2bc382?style=flat&logo=PyCharm&logoColor=white"/></a>
+   <a href="https://www.python.org/downloads/release/python-3913/" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=Python&logoColor=white"/></a>
+   <a href="" target="_blank"><img src="https://img.shields.io/badge/Pytorch-EE4C2C?style=flat&logo=PyTorch&logoColor=white"/></a>
+   <a href="" target="_blank"><img src="https://img.shields.io/badge/NumPy-013243?style=flat&logo=NumPy&logoColor=white"/></a>
+   <a href="" target="_blank"><img src="https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white"/></a>
+   <a href="" target="_blank"><img src="https://img.shields.io/badge/transformers-409FFF?style=flat&logoColor=white"/></a>
+   <a href="" target="_blank"><img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white"/></a>
+
+ 
    * ### 3.2 KOELECTRA fine-tuning
    * ### 3.3 학습 결과 그래프
 
