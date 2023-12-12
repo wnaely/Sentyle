@@ -14,8 +14,8 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
      <h5><p align="center" width="100%">
      <img width="44%" src="https://github.com/wnaely/Sentyle/assets/130523834/7cf8ea06-d124-4aa0-8a4a-5a143d41ad5c">
      <img width="50%" src="https://github.com/wnaely/Sentyle/assets/130523834/cd7e82c0-1cc5-484c-b180-bf699d30f708"> <br>
-     (출처: <a href="https://www.dailypop.kr/news/articleView.html?idxno=65004">DAILY POP 경제 기사</a>) /
-     (출처: <a href="https://www.wiseapp.co.kr/insight/detail/408">WISEAPP 인사이트</a>)</h5>
+     ( 출처: <a href="https://www.dailypop.kr/news/articleView.html?idxno=65004">DAILY POP 경제 기사</a> ) /
+     ( 출처: <a href="https://www.wiseapp.co.kr/insight/detail/408">WISEAPP 인사이트</a> )</h5>
      </p>
      
      작년 겨울인 22년 11월에 한 모바일 홈쇼핑 플랫폼을 이용하는 사용자들이 가장 많이 시청한 상품군은 '패션/잡화'였다. 해당 트렌드 리포트에 따르면, '패션/잡화' 상품군은 전체 시청수의 66.6%를 차지하는 것으로 조사되었다<sup><a href="https://www.dailypop.kr/news/articleView.html?idxno=65004">[01]</a></sup>. 또한 통계청의 온라인쇼핑 동향조사 결과, 2017년 31조 수준이었던 온라인 쇼핑몰의 연간 거래액은 2022년 77조로 5년 사이 147% 성장했다<sup><a href="https://www.wiseapp.co.kr/insight/detail/408">[02]</a></sup>.
@@ -30,7 +30,7 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
      <h5><p align="center" width="100%">
      <img width="49%" src="https://github.com/wnaely/Sentyle/assets/130523834/0e41e2e3-130d-4881-a8c7-25a0a0a543f9">
      <img width="49%" src="https://github.com/wnaely/Sentyle/assets/130523834/6d920de4-cddd-498c-9060-cf68036016b9"> <br>
-     (출처: <a href="https://yozm.wishket.com/magazine/detail/1240/">위시켓 요즘IT</a>) </p></h5>
+     ( 출처: <a href="https://yozm.wishket.com/magazine/detail/1240/">위시켓 요즘IT</a> ) </p></h5>
      
      리뷰는 온라인 상에서 제공되는 정보 중 하나로, 소비자들이 실제로 사용하고 평가하는 내용이다. 이는 온라인으로만 판매되는 상황에서 소비자들이 제품에 대한 정보를 얻는 유일한 수단 중 하나이며, 해당 제품이 화면과 실물에서 색상이 같은지, 품질에 만족하는지 등을 확인할 수 있다.
      이런 정보를 바탕으로 소비자들은 구매 결정을 내릴 때 보다 현명하게 선택할 수 있다.
