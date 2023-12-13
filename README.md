@@ -198,6 +198,10 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
    * ### 3.2 KOELECTRA fine-tuning
    * ### 3.3 학습 결과 그래프
 
+     <p align="center" width="100%">
+     <img width="49.5%" src="https://github.com/wnaely/Sentyle/assets/130523834/e7a829cd-c0b6-4267-ac82-1ee9ecd14762">
+     <img width="49.5%" src="https://github.com/wnaely/Sentyle/assets/130523834/e86552af-540c-425c-b248-8d43a99fefbc"></p>
+
 <hr>
      
 
