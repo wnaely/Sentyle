@@ -2,7 +2,7 @@
 
 
 # 👟👜 Sentyle 👚👖
-KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 긍부정 예측
+KoELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 긍부정 예측
 
 ## 1. 개요
 
@@ -195,15 +195,31 @@ KOELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
    <a href="" target="_blank"><img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white"/></a>
 
  
-   * ### 3.2 KOELECTRA fine-tuning
+   * ### 3.2 KoELECTRA fine-tuning
+
+     
    * ### 3.3 학습 결과 그래프
 
      <p align="center" width="100%">
+       <img width="49.5%" src="https://github.com/wnaely/Sentyle/assets/130523834/e86552af-540c-425c-b248-8d43a99fefbc">
      <img width="49.5%" src="https://github.com/wnaely/Sentyle/assets/130523834/e7a829cd-c0b6-4267-ac82-1ee9ecd14762">
-     <img width="49.5%" src="https://github.com/wnaely/Sentyle/assets/130523834/e86552af-540c-425c-b248-8d43a99fefbc"></p>
+     </p>
+
+     <table>
+       <tr align="center"><th colspan="2">결과</th><th>Epoch 1</th><th>Epoch 2</th><th>Epoch 3</th><th>Epoch 4</th></tr>
+       <tr align="center"><th rowspan="2">학습데이터</th><td>평균 학습 오차</td><td>0.58</td><td>0.37</td><td>0.24</td> 
+       <td>0.15</td></tr>
+       <tr align="center"><td>검증 정확도</td><td>0.74</td><td>0.86</td><td>0.87</td><td>0.89</td></tr>
+     </table> <br>
+
+     첫 번째 학습 단계에서 0.369의 놉은 loss값과 달리, 학습 단계가 진행될수록 loss 값이 감소하여 네 번째 단계에서는 0.029로 낮게 나타난다.
+     정확도도 학습이 진행됨에 따라 증가하는 변화를 보인다. 초기에는 93% 이었지만 마지막 단계에서는 95.6%로 성능이 향상되었다.
+     각각의 변화는 모델이 학습 데이터로부터 효과적으로 학습되었다는 것과 리뷰의 긍부정을 잘 예측하고 있다는 것을 나타낸다.
+
+   * ### 3.4 모델 적용
+     전체 데이터에 모델을 적용한 결과 긍부정 예측 정확도가 0.96%로 높게 나왔다.
 
 <hr>
-     
 
 ## 4. 배운점
 
