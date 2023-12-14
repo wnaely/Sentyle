@@ -197,6 +197,8 @@ KoELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
  
    * ### 3.2 KoELECTRA fine-tuning
 
+     Optimizer, batch size, epoch 수 등 fine-tuning을 위한 하이퍼파라미터를 설정하였으며, 학습 데이터로는 3000의 1대1 긍부정 리뷰 데이터셋을 사용했다.
+
      
    * ### 3.3 학습 결과 그래프
 
@@ -210,13 +212,24 @@ KoELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
        <tr align="center"><th rowspan="2">학습데이터</th><td>평균 학습 오차</td><td>0.58</td><td>0.37</td><td>0.24</td> 
        <td>0.15</td></tr>
        <tr align="center"><td>검증 정확도</td><td>0.74</td><td>0.86</td><td>0.87</td><td>0.89</td></tr>
-     </table> <br>
+     </table>
 
      첫 번째 학습 단계에서 0.369의 놉은 loss값과 달리, 학습 단계가 진행될수록 loss 값이 감소하여 네 번째 단계에서는 0.029로 낮게 나타난다.
      정확도도 학습이 진행됨에 따라 증가하는 변화를 보인다. 초기에는 93% 이었지만 마지막 단계에서는 95.6%로 성능이 향상되었다.
      각각의 변화는 모델이 학습 데이터로부터 효과적으로 학습되었다는 것과 리뷰의 긍부정을 잘 예측하고 있다는 것을 나타낸다.
 
    * ### 3.4 모델 적용
+     ```
+     test steps :  1 Accuracy :  0.875
+     test steps :  2 Accuracy :  1.0
+     test steps :  3 Accuracy :  1.0
+     ...
+     test steps :  4455 Accuracy :  0.875
+     test steps :  4456 Accuracy :  1.0
+     test steps :  4457 Accuracy :  1.0
+     Accuracy: 0.96
+     test took: 1:56:41
+     ```
      전체 데이터에 모델을 적용한 결과 긍부정 예측 정확도가 0.96%로 높게 나왔다.
 
 <hr>
