@@ -197,7 +197,7 @@ KoELECTRA를 활용하여 패션 쇼핑몰 리뷰 데이터 감성 분석 및 �
  
    * ### 3.2 KoELECTRA fine-tuning
 
-     Optimizer, batch size, epoch 수 등 fine-tuning을 위한 하이퍼파라미터를 설정하였으며, 학습 데이터로는 3000의 1대1 긍부정 리뷰 데이터셋을 사용했다.
+     Optimizer, batch size, epoch 수 등 fine-tuning을 위한 하이퍼파라미터를 설정하였으며, 학습 데이터로는 3000개의 1대1 긍부정 리뷰 데이터셋을 사용했다.
 
      
    * ### 3.3 학습 결과 그래프
